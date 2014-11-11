@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20141111005129) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "lunches", force: true do |t|
     t.string   "url"
     t.datetime "created_at"
